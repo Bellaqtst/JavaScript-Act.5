@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT SESSION</title>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+   <h1 id="result"></h1>
+   <h2 class="output"></h2>
+   <h3 id="outputName"></h3>
+
+   <button type="button" onclick="inputTwoNumbers();">Click Me</button>
+   <button type="button" onclick="confirmSubmission();">Click Me Again</button>
+   <button type="button" onclick="calculateGrade();">Input Here</button>
+   <br><br>
+   <h3 id="compute"></h3>
+<script src="js/custom.js"></script>
+<script type="text/javascript">
+      document.write("HELLO WORLD");
+      console.log("Hello World");
+
+   
+      let name = "ARABELLA RABE";
+      var age = 19;
+      const remarks = "STUDENT";
+     document.write("<br>");
+     document.write(name + " " + age + " " + remarks);
+   
+     document.getElementById("result").innerHTML = name + " " + age + " " + remarks;
+     document.getElementsByClassName("output")[0].innerHTML = name + " " + age + " " + remarks;
+
+     document.getElementById("outputName").innerHTML = displayName("Arabella Rabe");
+
+     document.write("<br>");
+     document.write(displayName("Arabella Rabe"));
+
+     console.log(computeTwoNumbers (18, 4));
+     document.write(computeTwoNumbers (18, 4));
+     document.getElementById("compute").innerHTML = computeTwoNumbers(18, 4); 
+     inputTwoNumbers();
+        checkGrade();
+        calculateGrade();
+        console.log(calculateGrade);
+</script>
+</body>
+</html> 
